@@ -12,44 +12,88 @@
     <header>
         <nav>
             <ul>
-                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
-                <li><a href="Yamini/about.html"><i class="fas fa-user"></i> About</a></li>
-                <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-                <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-                <li><a href="#publications"><i class="fas fa-book"></i> Publications</a></li>
-                <li><a href="#awards"><i class="fas fa-trophy"></i> Awards</a></li>
-                <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="publications.html"><i class="fas fa-book"></i> Publications</a></li>
+                <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section id="home" class="hero">
+        <section class="hero">
             <h1>Dr. Yamini</h1>
             <p>Research Scientist at AIIMS Raipur</p>
             <div class="hero-buttons">
-                <a href="#contact" class="cta-button">Get in Touch</a>
-                <a href="#publications" class="cta-button secondary">View Publications</a>
+                <a href="contact.html" class="cta-button">Get in Touch</a>
+                <a href="publications.html" class="cta-button secondary">View Publications</a>
             </div>
         </section>
 
-        // ... existing code ...
-
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <p>Feel free to reach out to me for research collaborations or professional inquiries.</p>
-            <div class="contact-info">
-                <a href="mailto:your.email@example.com" class="contact-link">
-                    <i class="fas fa-envelope"></i> your.email@example.com
+        <section class="quick-links">
+            <h2>Quick Links</h2>
+            <div class="links-grid">
+                <a href="about.html" class="link-card">
+                    <i class="fas fa-user"></i>
+                    <h3>About Me</h3>
+                    <p>Learn more about my background and research interests</p>
                 </a>
-                <p class="location">
-                    <i class="fas fa-map-marker-alt"></i> AIIMS Raipur, Chhattisgarh, India
-                </p>
-                <div class="social-links">
-                    <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                
+                <a href="education.html" class="link-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <p>View my academic journey and qualifications</p>
+                </a>
+                
+                <a href="experience.html" class="link-card">
+                    <i class="fas fa-briefcase"></i>
+                    <h3>Experience</h3>
+                    <p>Explore my professional experience and achievements</p>
+                </a>
+                
+                <a href="publications.html" class="link-card">
+                    <i class="fas fa-book"></i>
+                    <h3>Publications</h3>
+                    <p>Browse through my research papers and publications</p>
+                </a>
+                
+                <a href="awards.html" class="link-card">
+                    <i class="fas fa-trophy"></i>
+                    <h3>Awards</h3>
+                    <p>Discover my recognitions and achievements</p>
+                </a>
+                
+                <a href="skills.html" class="link-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Skills</h3>
+                    <p>Check out my technical and professional skills</p>
+                </a>
+            </div>
+        </section>
+
+        <section class="featured-content">
+            <h2>Featured Work</h2>
+            <div class="featured-grid">
+                <div class="featured-card">
+                    <h3>Current Research</h3>
+                    <p>Leading research on "Intelligent Emergency Healthcare System" at AIIMS Raipur, focusing on real-time ECG data analysis using deep learning.</p>
+                    <a href="experience.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="featured-card">
+                    <h3>Recent Publications</h3>
+                    <p>Published research papers in ACCV 2024 on women's crime pattern analysis and urban informatics.</p>
+                    <a href="publications.html" class="read-more">View Publications <i class="fas fa-arrow-right"></i></a>
+                </div>
+                
+                <div class="featured-card">
+                    <h3>Research Interests</h3>
+                    <p>Machine Learning, Healthcare Technology, Data Analysis, Environmental Applications, and Computer Vision.</p>
+                    <a href="about.html" class="read-more">Learn More <i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
         </section>
@@ -58,7 +102,9 @@
     <footer>
         <p>&copy; 2024 Dr. Yamini. All rights reserved.</p>
         <div class="footer-links">
-            <a href="#home">Back to Top</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About</a>
+            <a href="publications.html">Publications</a>
         </div>
     </footer>
 
@@ -71,23 +117,6 @@
                     behavior: 'smooth'
                 });
             });
-        });
-
-        // Add scroll-based animations
-        const observerOptions = {
-            threshold: 0.1
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('animate');
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.education-card, .experience-card, .publication-card, .award-card, .skill-category').forEach((el) => {
-            observer.observe(el);
         });
     </script>
 </body>
