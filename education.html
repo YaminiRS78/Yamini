@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education - Dr. Yamini</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="education.html" class="active"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="publications.html"><i class="fas fa-book"></i> Publications</a></li>
+                <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="education-section">
+            <h1>Education</h1>
+            <div class="education-timeline">
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>M.Tech in Computer Science</h3>
+                        <p class="institution">Mahaveer Academy of Technology and Science University, Raipur</p>
+                        <p class="duration">2019 - 2021</p>
+                        <p class="percentage">Percentage: 72.6%</p>
+                        <div class="thesis">
+                            <h4>Thesis</h4>
+                            <p>Online Face Recognition Attendance System Using Image Processing</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>MSc in Information Technology</h3>
+                        <p class="institution">Pt. Ravishankar Shukla University, Raipur</p>
+                        <p class="duration">2016 - 2018</p>
+                        <p class="percentage">Percentage: 69.67%</p>
+                        <div class="thesis">
+                            <h4>Dissertation</h4>
+                            <p>Career Path Guidance Tool Based on Basic Education Using PHP and Web Technologies</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-card">
+                    <div class="education-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="education-content">
+                        <h3>BSc in Computer Science</h3>
+                        <p class="institution">Pt. Ravishankar Shukla University, Raipur (DB Girls PG college)</p>
+                        <p class="duration">2013 - 2016</p>
+                        <p class="percentage">Percentage: 72.39%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dr. Yamini. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
