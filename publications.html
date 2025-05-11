@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Dr. Yamini</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="experience.html"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="publications.html" class="active"><i class="fas fa-book"></i> Publications</a></li>
+                <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="publications-section">
+            <h1>Publications</h1>
+            
+            <div class="publication-section">
+                <h2 class="section-title">Research Papers</h2>
+                <div class="publication-grid">
+                    <div class="publication-card">
+                        <h3>Smart Waste Management: Deep Learning-Based Garbage Classification for Sustainability</h3>
+                        <p class="authors"><strong>Yamini Sahu</strong>, Nilesh Kumar Sahu</p>
+                        <p class="venue">ACM COMPASS 2025</p>
+                        <p class="status">Under Review</p>
+                    </div>
+
+                    <div class="publication-card">
+                        <h3>Building Usage Classification in Indian Cities: Utilizing Street View Images and Object Detection Models</h3>
+                        <p class="authors"><strong>Yamini Sahu</strong>, Vasu Dhull, Satyajeet Shashwat, Vaibhav Kumar</p>
+                        <p class="venue">ACCV Workshop 2024</p>
+                        <a href="https://openaccess.thecvf.com/content/ACCV2024W/WiCV/papers/Sahu_Building_Usage_Classification_in_Indian_Cities_Utilizing_Street_View_Images_ACCVW_2024_paper.pdf" class="doi-link" target="_blank">doi.org/10.1007/978-981-96-2644-1_22</a>
+                    </div>
+
+                    <div class="publication-card">
+                        <h3>Spatial Clustering and Machine Learning for Crime Prediction: A Case Study on Women Safety in Bhopal</h3>
+                        <p class="authors"><strong>Yamini Sahu</strong>, Vaibhav Kumar</p>
+                        <p class="venue">ACCV Workshop 2024</p>
+                        <a href="https://openaccess.thecvf.com/content/ACCV2024W/WiCV/papers/Sahu_Spatial_Clustering_and_Machine_Learning_for_Crime_Prediction_A_Case_ACCVW_2024_paper.pdf" class="doi-link" target="_blank">doi.org/10.1007/978-981-96-2644-1_21</a>
+                    </div>
+
+                    <div class="publication-card">
+                        <h3>Environmental Application of Digital Twins: A Review</h3>
+                        <p class="authors"><strong>Yamini Sahu</strong>, Vaibhav Kumar</p>
+                        <p class="venue">Book Chapter, GeoAI</p>
+                        <a href="https://link.springer.com/chapter/10.1007/978-3-031-62442-1_18" class="doi-link" target="_blank">doi.org/10.1007/978-3-031-62442-1_18</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="publication-section">
+                <h2 class="section-title">Posters</h2>
+                <div class="publication-grid">
+                    <div class="publication-card">
+                        <h3>Beyond Footprints: Estimating Building Heights with Deep Learning and OpenStreetMap Features</h3>
+                        <p class="authors"><strong>Yamini Sahu</strong>, Gurleen Kaur, Shalvika Srivastav, Prachi Chachondhia, Vaibhav Kumar</p>
+                        <p class="venue">Mastercard AI Garage</p>
+                        <a href="https://drive.google.com/file/d/11BzQrtGpVdITJbt4OeCwg_IWIDQpk_hm/view?usp=sharing" class="doi-link" target="_blank">View Poster</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Dr. Yamini. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
