@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Dr. Yamini</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="education.html"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                <li><a href="experience.html" class="active"><i class="fas fa-briefcase"></i> Experience</a></li>
+                <li><a href="publications.html"><i class="fas fa-book"></i> Publications</a></li>
+                <li><a href="awards.html"><i class="fas fa-trophy"></i> Awards</a></li>
+                <li><a href="skills.html"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="experience-section">
+            <h1>Work & Experience</h1>
+            <div class="experience-timeline">
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-flask"></i>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Research Scientist II</h3>
+                        <p class="institution">AIIMS Raipur, Chhattisgarh</p>
+                        <p class="location">Raipur, Chhattisgarh</p>
+                        <p class="duration">September 2024 - Present</p>
+                        <div class="responsibilities">
+                            <p>Leading a research team at the Department of Trauma and Emergency, AIIMS Raipur, Chhattisgarh, on the "Intelligent Emergency Healthcare System" project. Our focus is on developing advanced critical care technologies specifically designed for remote and underserved hospitals.</p>
+                            <ul>
+                                <li>Primary research involves real-time ECG data analysis using deep learning for early detection of cardiovascular diseases</li>
+                                <li>Working on deploying trained models using MLOps practices</li>
+                                <li>Enabling integration into real-time systems in remote hospitals</li>
+                                <li>Developing AI-powered diagnostic specialists to support timely and informed clinical decisions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="experience-card">
+                    <div class="experience-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <div class="experience-content">
+                        <h3>Research Fellow / Doctoral Researcher</h3>
+                        <p class="institution">Department of Data Science and Engineering, IISER Bhopal</p>
+                        <p class="location">Bhopal, Madhya Pradesh</p>
+                        <p class="duration">December 2021 - August 2024</p>
+                        <div class="responsibilities">
+                            <p>Conducted research in women's crime pattern analysis and urban informatics, leading to two peer-reviewed publications at ACCV 2024.</p>
+                            <ul>
+                                <li>Machine learning-based hotspot detection for women's safety</li>
+                                <li>Deep learning-based building usage classification using street view images</li>
+                                <li>Surveillance coverage optimization</li>
+                                <li>Led a team of B.S. students and mentored them through research implementation</li>
+                                <li>Collaborated with interdisciplinary experts on public safety solutions</li>
+                                <li>Maintained CGPA of 8.5/10 during doctoral coursework</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 . Yamini. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="index.html">Back to Home</a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
