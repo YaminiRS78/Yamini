@@ -2,29 +2,179 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - Dr. Yamini</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        .contact-section {
+            padding: 60px 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
+        .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            justify-content: center;
+        }
+
+        .contact-info, .contact-form {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            flex: 1 1 400px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-info h2, .contact-form h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        .info-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .info-group i {
+            font-size: 20px;
+            color: #3498db;
+        }
+
+        .info-group h3 {
+            margin: 0;
+            font-size: 16px;
+            color: #2c3e50;
+        }
+
+        .info-group p, .info-group a {
+            color: #555;
+            text-decoration: none;
+        }
+
+        .social-links a {
+            display: inline-block;
+            font-size: 20px;
+            color: #3498db;
+            margin-right: 15px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #2c3e50;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+
+        .submit-btn {
+            padding: 12px 25px;
+            border: none;
+            background-color: #3498db;
+            color: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #2980b9;
+        }
+
+        .map-container {
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .map-container h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border: none;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            background: #ecf0f1;
+            color: #555;
+        }
+
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
-
-    <!-- Contact Section -->
     <main>
         <section class="contact-section">
             <h1 class="section-title">Contact Me</h1>
             <p class="section-subtitle">For research collaborations, consultations, or professional opportunities, please reach out below.</p>
 
             <div class="contact-wrapper">
-                <!-- Contact Info -->
                 <div class="contact-info">
                     <h2>Get in Touch</h2>
                     <div class="info-group">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h3>Email</h3>
-                            <a href="mailto:your.email@example.com">your.email@example.com</a>
+                            <a href="mailto:your.email@example.com">contact.yaminisahu@gmail.com</a>
                         </div>
                     </div>
                     <div class="info-group">
@@ -41,17 +191,14 @@
                             <p>+91 XXXXXXXXXX</p>
                         </div>
                     </div>
-
-                    <!-- Social Media Links -->
                     <div class="social-links">
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" aria-label="ResearchGate"><i class="fab fa-researchgate"></i></a>
+                        <a href="linkedin.com/in/yamini-sahu/"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-researchgate"></i></a>
                     </div>
                 </div>
 
-                <!-- Contact Form -->
                 <div class="contact-form">
                     <h2>Send a Message</h2>
                     <form id="contactForm">
@@ -76,31 +223,17 @@
                 </div>
             </div>
 
-            <!-- Google Map -->
             <div class="map-container">
                 <h2>Our Location</h2>
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.983448844589!2d81.6070410752974!3d21.247989379207386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2921f32d1e4f7b%3A0x15ae56f9d78683bb!2sAll%20India%20Institute%20of%20Medical%20Sciences%2C%20Raipur!5e0!3m2!1sen!2sin!4v1715519210172!5m2!1sen!2sin" 
-                    width="100%" 
-                    height="350" 
-                    style="border:0; border-radius: 12px; box-shadow: 0 0 10px rgba(0,0,0,0.1);" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3719.983448844589!2d81.6070410752974!3d21.247989379207386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a2921f32d1e4f7b%3A0x15ae56f9d78683bb!2sAll%20India%20Institute%20of%20Medical%20Sciences%2C%20Raipur!5e0!3m2!1sen!2sin!4v1715519210172!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Dr. Yamini. All rights reserved.</p>
-        <div class="footer-nav">
-            <a href="index.html">Back to Home</a>
-        </div>
+        <p>&copy; 2024 Dr. Yamini. All rights reserved. <a href="index.html">Back to Home</a></p>
     </footer>
 
-    <!-- JS Script -->
     <script>
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
